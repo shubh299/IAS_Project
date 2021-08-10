@@ -36,11 +36,3 @@ for service in services:
 		system("gnome-terminal -e 'bash -c \"python3 %s/%s  \"'"%(services[service]['path'],services[service]['file']))
 	else:
 		fun(service,services[service]['server'],services[service]['path'],services[service]['file'])
-
-# system("gnome-terminal -e 'bash -c \"python3 ssh.py\"'")
-#system("gnome-terminal -e 'bash -c \"ssh -i test_platform.pem ubuntu@ec2-3-15-199-89.us-east-2.compute.amazonaws.com \"'")
-# "bootstrap":"ec2-18-116-200-217.us-east-2.compute.amazonaws.com"},
-
-# stdin, stdout, stderr = ssh.exec_command("{p}python - <<EOF\n{s}\nEOF".format(p=remotepypath, s=mymodule))
-# print("stderr: ", stderr.readlines())
-# print("stdout: ", stdout.readlines())
